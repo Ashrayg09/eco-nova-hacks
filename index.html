@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Nova Hacks — Sept 5–6, 2026 · UC San Diego</title>
+    <meta
+      name="description"
+      content="Eco Nova Hacks is a 24-hour sustainability hackathon at UC San Diego on September 5–6, 2026. Build tech for a greener planet."
+    />
+    <meta name="theme-color" content="#0d3b2e" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Animated eco backdrop -->
+    <div class="backdrop" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="nav" id="top">
+      <a class="logo" href="#top" aria-label="Eco Nova Hacks home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path
+              d="M12 2C7 6 4 9 4 14a8 8 0 0016 0c0-5-3-8-8-12z"
+              fill="currentColor"
+            />
+            <path d="M12 21V9M12 13l-3-2M12 15l3-2" stroke="#0d3b2e" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="logo-text">Eco<span class="accent">Nova</span>Hacks</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#prizes">Prizes</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sponsors">Sponsors</a>
+        <a class="btn btn-sm" href="#register">Register</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="pill">🌱 Sept 5–6, 2026 · UC San Diego</div>
+        <h1>
+          Eco <span class="grad">Nova</span> Hacks
+        </h1>
+        <p class="tagline">
+          A 24-hour sustainability hackathon where students build technology for a
+          greener planet. Come with an idea, leave with a project — and maybe change
+          the world a little.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-lg" href="#register">Register free →</a>
+          <a class="btn btn-lg btn-ghost" href="#sponsors">Become a sponsor</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Jacobs School of Engineering, UCSD</span>
+          <span>⏱️ 24 hours of building</span>
+          <span>💸 100% free to attend</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Event by the numbers">
+      <div class="stat"><div class="num" data-count="250">0</div><div class="lbl">Hackers</div></div>
+      <div class="stat"><div class="num" data-count="24">0</div><div class="lbl">Hours</div></div>
+      <div class="stat"><div class="num" data-count="5">0</div><div class="lbl">Tracks</div></div>
+      <div class="stat"><div class="num" data-count="8000" data-prefix="$">0</div><div class="lbl">In prizes</div></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="eyebrow">What is it</span>
+        <h2>Hack for the planet</h2>
+      </div>
+      <div class="about-grid">
+        <p class="lead">
+          Eco Nova Hacks brings together students from across Southern California for a
+          weekend of building, learning, and problem-solving around one theme:
+          <strong>sustainability</strong>. Whether you're a first-time hacker or a
+          seasoned builder, you'll form a team, ship a project, and pitch it to judges —
+          all in 24 hours.
+        </p>
+        <div class="feature-cards">
+          <div class="fcard">
+            <div class="fic">🧑‍🤝‍🧑</div>
+            <h3>Beginner friendly</h3>
+            <p>Workshops, mentors, and starter kits mean you don't need experience — just curiosity.</p>
+          </div>
+          <div class="fcard">
+            <div class="fic">🛠️</div>
+            <h3>Build anything</h3>
+            <p>Apps, hardware, data models, or policy tools — if it helps the planet, it counts.</p>
+          </div>
+          <div class="fcard">
+            <div class="fic">🎓</div>
+            <h3>Learn &amp; connect</h3>
+            <p>Talks from climate-tech founders and time to meet people who care like you do.</p>
+          </div>
+          <div class="fcard">
+            <div class="fic">🏆</div>
+            <h3>Win prizes</h3>
+            <p>Cash, gear, and mentorship for the projects that push sustainability forward.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tracks -->
+    <section class="section alt" id="tracks">
+      <div class="section-head">
+        <span class="eyebrow">Choose your challenge</span>
+        <h2>Tracks</h2>
+        <p class="section-sub">Pick a lane — or blend a few. Every track has its own prize.</p>
+      </div>
+      <div class="tracks-grid">
+        <article class="track"><div class="tic">⚡</div><h3>Clean Energy</h3><p>Smarter grids, solar tooling, energy-use dashboards, and efficiency hacks.</p></article>
+        <article class="track"><div class="tic">🌊</div><h3>Oceans &amp; Water</h3><p>Marine health, water quality, conservation data, and coastal resilience.</p></article>
+        <article class="track"><div class="tic">♻️</div><h3>Waste &amp; Circularity</h3><p>Recycling, reuse marketplaces, food-waste reduction, and circular supply chains.</p></article>
+        <article class="track"><div class="tic">🚲</div><h3>Green Mobility</h3><p>Public transit, bike-share, EV tooling, and low-carbon logistics.</p></article>
+        <article class="track"><div class="tic">🌍</div><h3>Climate Awareness</h3><p>Education, carbon tracking, and tools that turn data into action.</p></article>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section" id="schedule">
+      <div class="section-head">
+        <span class="eyebrow">Two days</span>
+        <h2>Schedule</h2>
+        <p class="section-sub">All times PT. Subject to a few last-minute tweaks.</p>
+      </div>
+      <div class="sched-tabs" role="tablist">
+        <button class="stab active" data-day="1" role="tab">Sat · Sep 5</button>
+        <button class="stab" data-day="2" role="tab">Sun · Sep 6</button>
+      </div>
+      <div class="sched-panel" data-day="1">
+        <div class="sitem"><span class="time">9:00 AM</span><span class="ev">Check-in &amp; breakfast</span></div>
+        <div class="sitem"><span class="time">10:00 AM</span><span class="ev">Opening ceremony &amp; keynote</span></div>
+        <div class="sitem"><span class="time">11:00 AM</span><span class="ev">Team formation &amp; hacking begins</span></div>
+        <div class="sitem"><span class="time">1:00 PM</span><span class="ev">Lunch</span></div>
+        <div class="sitem"><span class="time">2:30 PM</span><span class="ev">Workshop: Intro to climate APIs</span></div>
+        <div class="sitem"><span class="time">6:30 PM</span><span class="ev">Dinner + mentor office hours</span></div>
+        <div class="sitem"><span class="time">9:00 PM</span><span class="ev">Late-night mini-event &amp; snacks</span></div>
+      </div>
+      <div class="sched-panel hidden" data-day="2">
+        <div class="sitem"><span class="time">7:00 AM</span><span class="ev">Sunrise stretch &amp; coffee</span></div>
+        <div class="sitem"><span class="time">8:00 AM</span><span class="ev">Breakfast</span></div>
+        <div class="sitem"><span class="time">11:00 AM</span><span class="ev">Hacking ends — submissions due</span></div>
+        <div class="sitem"><span class="time">11:30 AM</span><span class="ev">Project expo &amp; judging</span></div>
+        <div class="sitem"><span class="time">1:30 PM</span><span class="ev">Lunch</span></div>
+        <div class="sitem"><span class="time">2:30 PM</span><span class="ev">Closing ceremony &amp; awards</span></div>
+        <div class="sitem"><span class="time">3:30 PM</span><span class="ev">Wrap-up &amp; goodbyes</span></div>
+      </div>
+    </section>
+
+    <!-- Prizes -->
+    <section class="section alt" id="prizes">
+      <div class="section-head">
+        <span class="eyebrow">$8,000+ pool</span>
+        <h2>Prizes</h2>
+      </div>
+      <div class="prizes-grid">
+        <div class="prize silver"><div class="rank">2nd</div><div class="amt">$1,500</div><p>Runner-up</p></div>
+        <div class="prize gold"><div class="rank">1st</div><div class="amt">$3,000</div><p>Grand prize</p></div>
+        <div class="prize bronze"><div class="rank">3rd</div><div class="amt">$750</div><p>Third place</p></div>
+      </div>
+      <div class="prize-extra">
+        <span>🌱 Best Beginner Hack — $500</span>
+        <span>⚡ Best Use of Data — $500</span>
+        <span>♻️ Most Sustainable Impact — $500</span>
+        <span>🎨 Best Design — $500</span>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <span class="eyebrow">Good to know</span>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Who can attend?</summary>
+          <p>Any current high-school or college student, regardless of major or experience. First-timers are especially welcome.</p>
+        </details>
+        <details>
+          <summary>How much does it cost?</summary>
+          <p>Nothing. Eco Nova Hacks is 100% free — including meals, snacks, and swag — thanks to our sponsors.</p>
+        </details>
+        <details>
+          <summary>Do I need a team?</summary>
+          <p>Nope. Come solo or with friends. We'll run a team-formation session at the start so no one hacks alone.</p>
+        </details>
+        <details>
+          <summary>What should I bring?</summary>
+          <p>Your laptop and charger, a student ID, and anything you need to stay comfy overnight (a hoodie, toiletries, maybe a sleeping bag).</p>
+        </details>
+        <details>
+          <summary>Do I need to know how to code?</summary>
+          <p>Not necessarily. We welcome designers, researchers, and idea people. Workshops and mentors will help you learn as you build.</p>
+        </details>
+        <details>
+          <summary>Is it in person?</summary>
+          <p>Yes — the entire event runs in person at the Jacobs School of Engineering at UC San Diego.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="section alt" id="sponsors">
+      <div class="section-head">
+        <span class="eyebrow">Powering the weekend</span>
+        <h2>Sponsors</h2>
+        <p class="section-sub">
+          Want to support the next generation of climate builders? We'd love to partner with you.
+        </p>
+      </div>
+      <div class="sponsor-tiers">
+        <div class="tier"><h3>🌳 Redwood</h3><p>Presenting partner</p></div>
+        <div class="tier"><h3>🌲 Evergreen</h3><p>Gold tier</p></div>
+        <div class="tier"><h3>🌿 Sprout</h3><p>Silver tier</p></div>
+        <div class="tier"><h3>🍃 Seedling</h3><p>Community tier</p></div>
+      </div>
+      <div class="sponsor-cta">
+        <a class="btn btn-lg" href="mailto:team@econovahacks.tech?subject=Sponsoring%20Eco%20Nova%20Hacks">Get the sponsor prospectus</a>
+      </div>
+    </section>
+
+    <!-- Register / CTA -->
+    <section class="register" id="register">
+      <div class="register-card">
+        <h2>Ready to build a greener future?</h2>
+        <p>Registration is free and takes under two minutes. Spots are limited.</p>
+        <div class="hero-cta">
+          <a class="btn btn-lg" href="https://forms.gle/" target="_blank" rel="noopener">Register now →</a>
+          <a class="btn btn-lg btn-ghost" href="https://discord.com/" target="_blank" rel="noopener">Join our Discord</a>
+        </div>
+        <p class="register-note">Applications reviewed on a rolling basis · Sept 5–6, 2026 · UC San Diego</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">Eco<span class="accent">Nova</span>Hacks</span>
+          <p>A student-run sustainability hackathon at UC San Diego.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#faq">FAQ</a>
+          <a href="#sponsors">Sponsors</a>
+          <a href="mailto:team@econovahacks.tech">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Discord">Discord</a>
+          <a href="#" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2026 Eco Nova Hacks · Made with 💚 at UC San Diego · MLH Code of Conduct applies
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
