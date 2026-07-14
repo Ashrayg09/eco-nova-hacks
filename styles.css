@@ -210,12 +210,42 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.06; let
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { font-family: var(--sans); color: var(--muted); padding: 0 0 22px; font-size: 15.5px; max-width: 640px; }
 
-/* ---------- Sponsors ---------- */
-.sponsor-tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
-.tier { border: 1px solid var(--line); border-radius: 14px; padding: 32px 20px; text-align: center; background: var(--panel); transition: transform 0.18s, border-color 0.18s; }
-.tier:hover { transform: translateY(-4px); border-color: var(--accent); }
-.tier h3 { font-size: 22px; margin-bottom: 9px; font-weight: 600; }
-.tier p { font-family: var(--sans); color: var(--muted); font-size: 14px; }
+/* ---------- Sponsors (tiered) ---------- */
+.sponsor-tiers { display: flex; flex-direction: column; gap: 48px; margin-bottom: 48px; }
+.tier-group { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.tier-label {
+  font-family: var(--sans); font-weight: 700; font-size: 13px;
+  text-transform: uppercase; letter-spacing: 0.24em; color: var(--muted);
+  display: flex; align-items: center; gap: 14px;
+}
+.tier-label::before, .tier-label::after { content: ""; width: 46px; height: 1px; background: var(--line-strong); }
+.tier-label.partners { color: var(--accent); }
+.tier-label.gold { color: var(--gold); }
+.tier-label.silver { color: var(--silver); }
+.tier-label.bronze { color: var(--bronze); }
+
+.tier-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; }
+.sponsor-slot {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--panel);
+  color: var(--muted); font-family: var(--sans); transition: border-color 0.18s, transform 0.18s, color 0.18s;
+}
+.sponsor-slot.empty { border-style: dashed; font-size: 14px; letter-spacing: 0.02em; }
+.sponsor-slot.empty:hover { border-color: var(--accent); color: var(--text); }
+.sponsor-slot.filled { border-color: var(--line-strong); }
+.sponsor-slot.filled:hover { transform: translateY(-3px); border-color: var(--bronze); }
+
+/* per-tier sizing: bigger at the top, smaller toward bronze */
+.tier-row.partners .sponsor-slot { width: 280px; height: 118px; }
+.tier-row.gold .sponsor-slot { width: 240px; height: 100px; }
+.tier-row.silver .sponsor-slot { width: 200px; height: 88px; }
+.tier-row.bronze .sponsor-slot { width: 190px; height: 78px; }
+
+/* CodeCrafters lockup */
+.cc-logo { display: inline-flex; align-items: center; gap: 9px; color: #e7e4e6; }
+.cc-mark { height: 20px; width: auto; }
+.cc-name { font-family: var(--sans); font-weight: 600; font-size: 17px; letter-spacing: -0.01em; color: #e7e4e6; }
+
 .sponsor-cta { text-align: center; }
 
 /* ---------- Register ---------- */
