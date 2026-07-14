@@ -77,10 +77,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <!-- Animated eco backdrop -->
@@ -123,11 +123,53 @@
 
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-scene" aria-hidden="true">
+        <div class="aurora"></div>
+        <div class="stars"></div>
+        <svg class="scene-art" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice" fill="none">
+          <!-- sun -->
+          <g class="sun">
+            <circle cx="720" cy="330" r="78" />
+            <g class="rays">
+              <line x1="810" y1="330" x2="834" y2="330" />
+              <line x1="784" y1="394" x2="801" y2="411" />
+              <line x1="720" y1="420" x2="720" y2="444" />
+              <line x1="656" y1="394" x2="639" y2="411" />
+              <line x1="630" y1="330" x2="606" y2="330" />
+              <line x1="656" y1="266" x2="639" y2="249" />
+              <line x1="720" y1="240" x2="720" y2="216" />
+              <line x1="784" y1="266" x2="801" y2="249" />
+            </g>
+          </g>
+          <!-- birds -->
+          <path class="bird" d="M300 150 q 13 -11 26 0 q 13 -11 26 0" />
+          <path class="bird" d="M356 176 q 10 -9 20 0 q 10 -9 20 0" />
+          <path class="bird" d="M1074 132 q 13 -11 26 0 q 13 -11 26 0" />
+          <!-- far hill + turbines -->
+          <path class="hill hill-far" d="M0 452 C 260 402 520 420 760 438 S 1220 418 1440 446" />
+          <g class="turbine">
+            <line x1="452" y1="336" x2="452" y2="440" />
+            <line x1="452" y1="336" x2="452" y2="282" />
+            <line x1="452" y1="336" x2="498" y2="362" />
+            <line x1="452" y1="336" x2="406" y2="362" />
+            <circle class="hub" cx="452" cy="336" r="3.6" />
+          </g>
+          <g class="turbine">
+            <line x1="980" y1="352" x2="980" y2="448" />
+            <line x1="980" y1="352" x2="980" y2="304" />
+            <line x1="980" y1="352" x2="1021" y2="375" />
+            <line x1="980" y1="352" x2="939" y2="375" />
+            <circle class="hub" cx="980" cy="352" r="3.6" />
+          </g>
+          <!-- mid hill -->
+          <path class="hill hill-mid" d="M0 522 C 320 468 640 492 920 520 S 1320 536 1440 512" />
+          <!-- near hill -->
+          <path class="hill hill-near" d="M0 582 C 380 540 760 580 1120 560 S 1400 578 1440 574" />
+        </svg>
+      </div>
       <div class="hero-inner">
-        <div class="pill">🌱 Sept 5–6, 2026 · UC San Diego</div>
-        <h1>
-          Eco <span class="grad">Nova</span> Hacks
-        </h1>
+        <div class="pill"><span class="pdot"></span> Sept 5–6, 2026 · UC San Diego</div>
+        <h1>Eco <span class="grad">Nova</span> Hacks</h1>
         <p class="tagline">
           A 24-hour hackathon at UC San Diego focused on climate and sustainability.
           Get a team together, build a working project over the weekend, and demo it
@@ -136,11 +178,6 @@
         <div class="hero-cta">
           <a class="btn btn-lg" href="#register">Register free →</a>
           <a class="btn btn-lg btn-ghost" href="#sponsors">Become a sponsor</a>
-        </div>
-        <div class="hero-meta">
-          <span>📍 Jacobs School of Engineering, UCSD</span>
-          <span>⏱️ 24 hours of building</span>
-          <span>💸 100% free to attend</span>
         </div>
       </div>
     </section>
