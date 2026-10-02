@@ -10,8 +10,8 @@ Build technology for a greener planet. Free to attend, beginner friendly.
 A static single-page site — no build step, no dependencies.
 
 - `index.html` — page markup and content
-- `styles.css` — eco-themed styling (dark green palette, animated backdrop)
-- `script.js` — mobile nav, animated stat counters
+- `styles.css` — green-and-white theme, square-edged cards, Space Grotesk / Outfit type
+- `script.js` — mobile nav, event countdown, animated stat counters
 
 ## Run locally
 

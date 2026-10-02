@@ -21,6 +21,25 @@
     );
   }
 
+  // ----- Countdown to the event -----
+  const cd = document.getElementById("countdown");
+  if (cd && cd.dataset.deadline) {
+    const deadline = new Date(cd.dataset.deadline).getTime();
+    const field = (k) => cd.querySelector('[data-cd="' + k + '"]');
+    const els = { days: field("days"), hours: field("hours"), mins: field("mins"), secs: field("secs") };
+    const pad = (n) => String(n).padStart(2, "0");
+    const tick = () => {
+      let diff = Math.floor((deadline - Date.now()) / 1000);
+      if (diff < 0) diff = 0;
+      if (els.days) els.days.textContent = pad(Math.floor(diff / 86400));
+      if (els.hours) els.hours.textContent = pad(Math.floor((diff % 86400) / 3600));
+      if (els.mins) els.mins.textContent = pad(Math.floor((diff % 3600) / 60));
+      if (els.secs) els.secs.textContent = pad(diff % 60);
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+
   // ----- Schedule day tabs -----
   const tabs = document.querySelectorAll(".stab");
   const panels = document.querySelectorAll(".sched-panel");
