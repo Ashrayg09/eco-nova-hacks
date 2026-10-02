@@ -37,7 +37,7 @@
   const animate = (el) => {
     const target = Number(el.dataset.count);
     const prefix = el.dataset.prefix || "";
-    const suffix = target >= 1000 ? "+" : "";
+    const suffix = el.dataset.suffix || "";
     const dur = 1400;
     const start = performance.now();
     const step = (now) => {
