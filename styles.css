@@ -173,6 +173,14 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .track h3 { font-size: 21px; margin-bottom: 11px; font-weight: 600; }
 .track p { font-family: var(--sans); color: var(--muted); font-size: 14px; }
 
+/* ---------- Team ---------- */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; max-width: 720px; margin: 0 auto; }
+.member { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 34px 24px; text-align: center; box-shadow: var(--card-shadow); transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s; }
+.member:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 30px rgba(22,163,74,0.14); }
+.avatar { width: 84px; height: 84px; border-radius: 50%; margin: 0 auto 18px; display: grid; place-items: center; background: var(--panel-2); border: 1px solid var(--line-strong); color: var(--accent); font-family: var(--display); font-weight: 700; font-size: 29px; letter-spacing: 0.02em; }
+.member h3 { font-size: 21px; font-weight: 700; margin-bottom: 6px; }
+.member .role { font-family: var(--sans); color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: 0.03em; }
+
 /* ---------- Schedule ---------- */
 .sched-tabs { display: flex; gap: 10px; justify-content: center; margin-bottom: 34px; }
 .stab { background: transparent; border: 1px solid var(--line); color: var(--muted); padding: 12px 26px; border-radius: 999px; cursor: pointer; font-family: var(--sans); font-weight: 600; font-size: 14px; letter-spacing: 0.04em; transition: 0.15s; }
