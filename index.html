@@ -80,7 +80,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="styles.css?v=11" />
   </head>
   <body>
     <!-- Animated eco backdrop -->
@@ -182,9 +182,13 @@
           <div class="cd-box"><div class="cd-num" data-cd="mins">00</div><div class="cd-lbl">Minutes</div></div>
           <div class="cd-box"><div class="cd-num" data-cd="secs">00</div><div class="cd-lbl">Seconds</div></div>
         </div>
-        <div class="hero-cta">
-          <a class="btn btn-lg" href="https://luma.com/lz7ktlk9" target="_blank" rel="noopener">Register free →</a>
-          <a class="btn btn-lg btn-ghost" href="#sponsors">Become a sponsor</a>
+        <div class="hero-cta action-row">
+          <a class="btn" href="https://luma.com/lz7ktlk9" target="_blank" rel="noopener">Register Now</a>
+          <a class="btn btn-discord" href="https://discord.com/" target="_blank" rel="noopener">Join Discord</a>
+          <button type="button" class="btn btn-alt" data-tally-open="TALLY_FORM_ID" data-tally-layout="modal" data-tally-width="540" data-tally-emoji-text="🌱" data-tally-emoji-animation="wave">Volunteer</button>
+          <a class="btn btn-ghost" href="#schedule">View Schedule</a>
+          <a class="btn btn-ghost" href="#faq">Event Guide</a>
+          <a class="btn btn-ghost" href="#transparency">Donate</a>
         </div>
       </div>
     </section>
@@ -211,27 +215,42 @@
           judges that evening. Bring a laptop and an idea; we'll handle the food, space,
           and mentors.
         </p>
-        <div class="feature-cards">
-          <div class="fcard">
-            <div class="fic">🧑‍🤝‍🧑</div>
-            <h3>No experience needed</h3>
-            <p>Workshops run all weekend and mentors are around whenever you're stuck. Plenty of people here are building their first project.</p>
-          </div>
-          <div class="fcard">
-            <div class="fic">🛠️</div>
-            <h3>Build what you want</h3>
-            <p>Apps, hardware, data tools, research, or policy work all count, as long as it ties back to sustainability.</p>
-          </div>
-          <div class="fcard">
-            <div class="fic">🎓</div>
-            <h3>Meet people</h3>
-            <p>Talks from people working in climate and clean tech, plus time to actually meet other students between builds.</p>
-          </div>
-          <div class="fcard">
-            <div class="fic">🏆</div>
-            <h3>Win prizes</h3>
-            <p>Gift-card and cash prizes for the strongest projects, judged on impact, build quality, and design.</p>
-          </div>
+      </div>
+
+      <div class="special-head">
+        <span class="eyebrow">Why join</span>
+        <h3>What makes Eco Nova Hacks special</h3>
+      </div>
+      <div class="special-cards">
+        <div class="fcard">
+          <div class="fic">🌱</div>
+          <h3 class="c-green">Sustainability Focus</h3>
+          <p>Dive into real climate and sustainability challenges. Learn about clean energy, waste, and climate tech from people working in the field.</p>
+        </div>
+        <div class="fcard">
+          <div class="fic">🤝</div>
+          <h3 class="c-blue">Beginner Friendly</h3>
+          <p>New to coding or hackathons? No problem. We'll provide workshops, mentorship, and resources to help you succeed.</p>
+        </div>
+        <div class="fcard">
+          <div class="fic">💡</div>
+          <h3 class="c-amber">Learn &amp; Build</h3>
+          <p>Get hands-on experience with real tools and technologies while building your own innovative sustainability project.</p>
+        </div>
+        <div class="fcard">
+          <div class="fic">🏆</div>
+          <h3 class="c-pink">Amazing Prizes</h3>
+          <p>Compete for prizes while gaining valuable experience and networking with people who care about the planet.</p>
+        </div>
+        <div class="fcard">
+          <div class="fic">💬</div>
+          <h3 class="c-teal">Expert Mentorship</h3>
+          <p>Connect with mentors from climate orgs and tech companies who will guide you throughout the day.</p>
+        </div>
+        <div class="fcard">
+          <div class="fic">🚀</div>
+          <h3 class="c-indigo">Launch Your Journey</h3>
+          <p>Kickstart your journey in tech and sustainability. Create lasting connections and discover new opportunities.</p>
         </div>
       </div>
     </section>
@@ -403,6 +422,18 @@
       </div>
     </section>
 
+    <!-- Financial Transparency -->
+    <section class="section alt" id="transparency">
+      <div class="transparency-card">
+        <h2><span class="t-gem" aria-hidden="true">💎</span> Financial transparency</h2>
+        <p>We believe in being open about how Eco Nova Hacks is funded. View our budget and real-time ledger, and help us run the event with a donation.</p>
+        <div class="transparency-cta">
+          <a class="btn" href="#" target="_blank" rel="noopener">View transparency page</a>
+          <a class="btn btn-alt" href="#" target="_blank" rel="noopener">Make a donation</a>
+        </div>
+      </div>
+    </section>
+
     <!-- Register / CTA -->
     <section class="register" id="register">
       <div class="register-card">
@@ -443,5 +474,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Tally forms (powers the Volunteer button popup) -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
   </body>
 </html>
