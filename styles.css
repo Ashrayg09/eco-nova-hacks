@@ -244,6 +244,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .cc-mark { height: 20px; width: auto; }
 .cc-name { font-family: var(--sans); font-weight: 600; font-size: 17px; letter-spacing: -0.01em; color: #1b2a24; }
 
+/* text sponsor wordmark */
+.sponsor-name { font-family: var(--display); font-weight: 700; font-size: 24px; letter-spacing: -0.02em; color: var(--text); }
+.sponsor-tld { color: var(--accent); }
+
 .sponsor-cta { text-align: center; }
 
 /* ---------- Register ---------- */
