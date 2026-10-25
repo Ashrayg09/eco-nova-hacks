@@ -1,7 +1,7 @@
 # Eco Nova Hacks 🌱
 
-The official website for **Eco Nova Hacks** — a one-day student sustainability
-hackathon at the **San Diego Central Library** on **October 17, 2026**.
+The official website for **Eco Nova Hacks** — a two-day student sustainability
+hackathon at the **San Diego Central Library** on **November 21–22, 2026**.
 
 Build technology for a greener planet. Free to attend, beginner friendly.
 
@@ -11,7 +11,7 @@ A static single-page site — no build step, no dependencies.
 
 - `index.html` — page markup and content
 - `styles.css` — green-and-white theme, rounded cards, Space Grotesk / Outfit type
-- `script.js` — mobile nav, event countdown, animated stat counters
+- `script.js` — mobile nav, event countdown, schedule tabs, animated stat counters
 
 ## Run locally
 
