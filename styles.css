@@ -205,6 +205,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .stab.active { background: var(--accent); color: #ffffff; border-color: transparent; }
 .sched-panel { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; }
 .sched-panel.hidden { display: none; }
+.sched-mode { font-family: var(--sans); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.sched-between { max-width: 720px; margin: 22px auto 0; text-align: center; font-family: var(--sans); color: var(--muted); font-size: 14.5px; font-style: italic; }
 .sitem { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 8px; border-top: 1px solid var(--line); align-items: baseline; }
 .sitem:last-child { border-bottom: 1px solid var(--line); }
 .sitem .time { font-family: var(--display); color: var(--accent); font-weight: 700; font-size: 16px; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
