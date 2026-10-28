@@ -89,7 +89,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .hero-scene { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
 
 /* aurora light streaks at top */
-.hero-scene .aurora {
+.hero-scene .aurora { display: none; }
+.hero-scene .aurora-off {
   position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
   width: 140%; height: 480px; opacity: 0.45; filter: blur(80px);
   background:
@@ -115,13 +116,12 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 /* fade the scene into the page bottom */
 .hero-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, var(--bg) 96%); }
 
-.pill {
-  display: inline-flex; align-items: center; gap: 9px; padding: 9px 18px; border-radius: 999px;
-  background: var(--panel-2); border: 1px solid var(--line-strong);
-  color: var(--text); font-size: 12.5px; font-weight: 700; letter-spacing: 0.14em;
-  text-transform: uppercase; margin-bottom: 30px;
+.hero-kicker {
+  font-family: var(--sans); font-weight: 700; font-size: 13px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  margin-bottom: 28px;
 }
-.pill .pdot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.hero-kicker .hk-date { color: var(--accent); }
 
 .hero h1 {
   font-family: var(--display); text-transform: uppercase; font-weight: 700;
@@ -186,7 +186,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .tracks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
 .track { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 32px 26px; text-align: left; box-shadow: var(--card-shadow); transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s; }
 .track:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 30px rgba(22,163,74,0.14); }
-.tic { font-size: 34px; margin-bottom: 16px; }
+.tic { color: var(--accent); margin-bottom: 16px; line-height: 0; }
+.fic svg, .tic svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.fic svg { width: 24px; height: 24px; }
+.tic svg { width: 30px; height: 30px; }
 .track h3 { font-size: 21px; margin-bottom: 11px; font-weight: 600; }
 .track p { font-family: var(--sans); color: var(--muted); font-size: 14px; }
 
