@@ -140,9 +140,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 /* ---------- Stats ---------- */
 .stats {
   max-width: var(--maxw); margin: 30px auto 0; padding: 0 26px;
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  display: grid; grid-template-columns: repeat(4, 1fr);
 }
-.stat { background: #dde1d6; color: #15120b; border: 1.5px solid #15120b; border-radius: 0; box-shadow: 5px 5px 0 #000; padding: 28px 22px; text-align: left; }
+.stat { border: 1px solid var(--line); padding: 34px 22px; text-align: left; margin: -0.5px; }
+.stat:nth-child(2) { border-color: var(--line-strong); }
 .stat .num { font-family: var(--mono); font-weight: 600; font-size: clamp(34px, 5vw, 58px); color: var(--text); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .stat .lbl { font-family: var(--mono); color: var(--muted); font-size: 12px; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.13em; font-weight: 500; }
 
@@ -299,40 +300,22 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .copyright { text-align: center; font-family: var(--sans); color: var(--muted); font-size: 13px; margin-top: 44px; padding-top: 26px; border-top: 1px solid var(--line); max-width: var(--maxw); margin-left: auto; margin-right: auto; }
 
 /* ---------- Cream content cards (hard offset shadow) ---------- */
-.fcard, .track, .member, .prize, .cd-box,
-.sponsor-slot.filled, .sponsor-slot.empty {
-  background: #dde1d6;
+.fcard, .track {
+  background: #d8edda;
   color: #15120b;
   border: 1.5px solid #15120b;
   border-radius: 0;
   box-shadow: 5px 5px 0 #000;
 }
-.fcard:hover, .track:hover, .member:hover {
+.fcard:hover, .track:hover {
   transform: translate(-2px, -2px);
   border-color: #15120b;
   box-shadow: 8px 8px 0 #000;
 }
-.fcard h3, .track h3, .member h3 { color: #15120b; }
-.fcard p, .track p, .prize p { color: #5c5648; }
-.member .role { color: #2f8f5a; font-weight: 600; }
-.fic { background: #d2d7c9; border: 1px solid #15120b; border-radius: 0; color: #2f8f5a; }
-.tic { color: #2f8f5a; }
-.cd-num { color: #15120b; }
-.cd-lbl { color: #6b6456; }
-.stat .num { color: #15120b; }
-.stat .lbl { color: #6b6456; }
-.prize .rank { color: #6b6456; }
-.prize .amt { color: #15120b; }
-.prize.gold { background: #dde1d6; border: 2.5px solid #2f8f5a; box-shadow: 5px 5px 0 #000; }
-.prize.gold .amt { color: #2f8f5a; }
-.prize.silver .amt { color: #6b7280; }
-.prize.bronze .amt { color: #b06a30; }
-.member .avatar { background: #d2d7c9; border: 1px solid #15120b; color: #2f8f5a; }
-.sponsor-slot.empty { border-style: dashed; color: #6b6456; }
-.sponsor-slot.empty:hover { border-color: #2f8f5a; color: #15120b; }
-.sponsor-name { color: #15120b; }
-.sponsor-tld { color: #2f8f5a; }
-.cc-logo, .cc-name { color: #15120b; }
+.fcard h3, .track h3 { color: #15120b; }
+.fcard p, .track p { color: #4f5a4c; }
+.fic { background: #c7e4c9; border: 1px solid #15120b; border-radius: 0; color: #237a49; }
+.tic { color: #237a49; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 880px) {
