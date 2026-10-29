@@ -16,9 +16,10 @@
   --silver: #cdd6cf;
   --bronze: #d79b63;
   --maxw: 1140px;
-  --display: "Space Grotesk", system-ui, sans-serif;
-  --serif: "Space Grotesk", system-ui, sans-serif;
-  --sans: "Outfit", system-ui, -apple-system, sans-serif;
+  --display: "Geist", system-ui, -apple-system, sans-serif;
+  --serif: "Geist", system-ui, -apple-system, sans-serif;
+  --sans: "Geist", system-ui, -apple-system, sans-serif;
+  --mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,8 +41,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 
 /* ---------- Eyebrow / tracked labels ---------- */
 .eyebrow {
-  display: inline-block; font-family: var(--sans); font-weight: 600;
-  font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em;
+  display: inline-block; font-family: var(--mono); font-weight: 500;
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em;
   color: var(--muted); margin-bottom: 16px;
 }
 
@@ -112,8 +113,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .hero-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, var(--bg) 96%); }
 
 .hero-kicker {
-  font-family: var(--sans); font-weight: 700; font-size: 13px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  font-family: var(--mono); font-weight: 500; font-size: 13px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
   margin-bottom: 28px;
 }
 .hero-kicker .hk-date { color: var(--accent); }
@@ -129,9 +130,9 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 /* ---------- Countdown ---------- */
 .countdown { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 0 auto 38px; }
 .cd-box { min-width: 96px; padding: 18px 12px 13px; border: 1px solid var(--line-strong); border-radius: 14px; background: var(--panel); box-shadow: var(--card-shadow); }
-.cd-num { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 5vw, 46px); color: var(--text); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.cd-num { font-family: var(--mono); font-weight: 600; font-size: clamp(30px, 5vw, 46px); color: var(--text); line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
 .cd-sep { display: none; }
-.cd-lbl { margin-top: 9px; font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.cd-lbl { font-family: var(--mono); margin-top: 9px; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
 
 .hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .hero-meta { display: none; }
@@ -143,8 +144,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 }
 .stat { border: 1px solid var(--line); padding: 34px 22px; text-align: left; margin: -0.5px; }
 .stat:nth-child(2) { border-color: var(--line-strong); }
-.stat .num { font-family: var(--display); font-weight: 700; font-size: clamp(34px, 5vw, 60px); color: var(--text); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
-.stat .lbl { color: var(--muted); font-size: 12px; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.16em; font-weight: 600; }
+.stat .num { font-family: var(--mono); font-weight: 600; font-size: clamp(34px, 5vw, 58px); color: var(--text); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.stat .lbl { font-family: var(--mono); color: var(--muted); font-size: 12px; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.13em; font-weight: 500; }
 
 /* ---------- Sections ---------- */
 .section { max-width: var(--maxw); margin: 0 auto; padding: 96px 26px; }
@@ -197,18 +198,18 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .stab.active { background: var(--accent); color: var(--on-accent); border-color: transparent; }
 .sched-panel { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; }
 .sched-panel.hidden { display: none; }
-.sched-mode { font-family: var(--sans); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.sched-mode { font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
 .sched-between { max-width: 720px; margin: 22px auto 0; text-align: center; font-family: var(--sans); color: var(--muted); font-size: 14.5px; font-style: italic; }
 .sitem { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 8px; border-top: 1px solid var(--line); align-items: baseline; }
 .sitem:last-child { border-bottom: 1px solid var(--line); }
-.sitem .time { font-family: var(--display); color: var(--accent); font-weight: 700; font-size: 16px; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.sitem .time { font-family: var(--mono); color: var(--accent); font-weight: 500; font-size: 15px; letter-spacing: 0; font-variant-numeric: tabular-nums; }
 .sitem .ev { font-family: var(--sans); color: var(--text); font-size: 15px; }
 
 /* ---------- Prizes ---------- */
 .prizes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: end; max-width: 800px; margin: 0 auto 22px; }
 .prize { border: 1px solid var(--line); border-radius: 14px; padding: 32px 20px; text-align: center; background: var(--panel); box-shadow: var(--card-shadow); }
 .prize .rank { font-family: var(--sans); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); }
-.prize .amt { font-family: var(--display); font-size: 44px; font-weight: 700; margin: 10px 0 4px; letter-spacing: -0.03em; }
+.prize .amt { font-family: var(--mono); font-size: 42px; font-weight: 600; margin: 10px 0 4px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .prize p { font-family: var(--sans); color: var(--muted); font-size: 14px; }
 .prize.gold { padding-top: 46px; padding-bottom: 46px; border: 2px solid var(--accent); background: var(--panel-2); box-shadow: 0 10px 40px rgba(95,176,128,0.14); }
 .prize.gold .amt { color: var(--accent); }
