@@ -113,8 +113,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 .hero-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, var(--bg) 96%); }
 
 .hero-kicker {
-  font-family: var(--mono); font-weight: 500; font-size: 13px;
-  letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  font-family: var(--sans); font-weight: 600; font-size: 14px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
   margin-bottom: 28px;
 }
 .hero-kicker .hk-date { color: var(--accent); }
