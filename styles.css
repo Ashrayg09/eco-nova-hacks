@@ -16,10 +16,10 @@
   --silver: #cdd6cf;
   --bronze: #d79b63;
   --maxw: 1140px;
-  --display: "Geist", system-ui, -apple-system, sans-serif;
-  --serif: "Geist", system-ui, -apple-system, sans-serif;
-  --sans: "Geist", system-ui, -apple-system, sans-serif;
-  --mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --serif: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --sans: "Outfit", system-ui, -apple-system, sans-serif;
+  --mono: "Space Grotesk", system-ui, -apple-system, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
