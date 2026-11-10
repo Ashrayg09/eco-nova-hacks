@@ -66,13 +66,13 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.04; l
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
-  background: #ffffff; color: #0a2619; font-family: var(--sans);
+  background: #b9e2c2; color: #0a2619; font-family: var(--sans);
   font-weight: 700; border-radius: 999px; padding: 13px 26px; font-size: 14px;
   border: 1px solid transparent; cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s, background 0.15s, border-color 0.15s;
   box-shadow: none; letter-spacing: 0.01em;
 }
-.btn:hover { transform: translateY(-2px); background: #eef2ec; box-shadow: 0 10px 26px rgba(0,0,0,0.3); }
+.btn:hover { transform: translateY(-2px); background: #a9d8b4; box-shadow: 0 10px 26px rgba(0,0,0,0.3); }
 .btn-sm { padding: 10px 20px; font-size: 13px; }
 .btn-lg { padding: 16px 34px; font-size: 15px; }
 .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line-strong); }
